@@ -1,14 +1,15 @@
 $(document).ready(function() {
-  $('.icon-menu').click(function() {
-    $('#menu').css('left', '0px');
-    $('.bg-overlay').css('display', 'block');
-  });
-  $('.bg-overlay').click(function() {
-    $('#menu').css('left', '-100%');
-    $('.bg-overlay').css('display', 'none');
-  });
-  $('.close-menu').click(function() {
-    $('#menu').css('left', '-100%');
-    $('.bg-overlay').css('display', 'none');
-  });
+	$('.icon-menu').click(function() {
+		$('#menu').css('left', '0px');
+		$('.bg-overlay').css('display', 'block');
+	});
+	$('.bg-overlay').click(function() {
+		$('#menu').css('left', '-100%');
+		$('.bg-overlay').css('display', 'none');
+	});
+	$('.close-menu').click(function() {
+		$('#menu').css('left', '-100%');
+		$('.bg-overlay').css('display', 'none');
+	});
 });
+!function(e){var n={};function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}t.m=e,t.c=n,t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:r})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(t.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var o in e)t.d(r,o,function(n){return e[n]}.bind(null,o));return r},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p="",t(t.s=0)}([function(e,n,t){"use strict";function r(e,n){for(var t=0;t<n.length;t++){var r=n[t];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}t.r(n);var o=function(){function e(){var n,t,r;!function(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}(this,e),n=this,t="backDrop",r=document.querySelector(".popup-backdrop"),t in n?Object.defineProperty(n,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):n[t]=r,this.PopupComponentInit()}var n,t;return n=e,(t=[{key:"openPopup",value:function(){var e=this,n=Array.from(document.querySelectorAll(".js-open-popup"));n&&n.length>0&&n.forEach(function(n){n.addEventListener("click",function(){var t=n.getAttribute("data-popup");document.querySelector(".".concat(t)).classList.add("is-active"),e.backDrop.classList.add("is-active")})})}},{key:"closePopup",value:function(){var e=Array.from(document.querySelectorAll(".popup-item"));e&&e.length>0&&e.forEach(function(e){e.classList.contains("is-active")&&e.classList.remove("is-active")}),this.backDrop&&this.backDrop.classList.contains("is-active")&&this.backDrop.classList.remove("is-active")}},{key:"clickBackDrop",value:function(){var e=this;this.backDrop&&this.backDrop.addEventListener("click",function(){e.closePopup()})}},{key:"clickCloseButton",value:function(){var e=this,n=Array.from(document.querySelectorAll(".popup-close-button"));n&&n.length>0&&n.forEach(function(n){n.addEventListener("click",function(){e.closePopup()})})}},{key:"PopupComponentInit",value:function(){this.openPopup(),this.clickBackDrop(),this.clickCloseButton()}}])&&r(n.prototype,t),e}();function i(e,n){for(var t=0;t<n.length;t++){var r=n[t];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var c=function(){function e(){!function(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}(this,e),new o}var n,t;return n=e,t=[{key:"init",value:function(){return new e}}],null&&i(n.prototype,null),t&&i(n,t),e}();function a(e,n){for(var t=0;t<n.length;t++){var r=n[t];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}(function(){function e(){!function(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}(this,e),c.init()}var n,t;return n=e,t=[{key:"init",value:function(){return new e}}],null&&a(n.prototype,null),t&&a(n,t),e})().init()}]);

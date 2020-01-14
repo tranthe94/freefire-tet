@@ -12,7 +12,7 @@
 	src: url(../fonts/SVN-Cintra.eot);
 	src: local("../fonts/SVN-Cintra"), url(../fonts/SVN-Cintra.eot?#iefix) format("embedded-opentype"), url(../fonts/SVN-Cintra.woff2) format("woff2"), url(../fonts/SVN-Cintra.woff) format("woff"), url(../fonts/SVN-Cintra.ttf) format("truetype"), url(../fonts/SVN-Cintra.svg#SVN-Cintra) format("svg");
 	font-display: swap;
-	font-family: SVN-Cintra;
+	font-family: 'SVN-Cintra';
 	font-style: normal;
 	font-weight: 400
 }
@@ -21,7 +21,7 @@
 	src: url(../fonts/SairaSemiCondensed-Regular.eot);
 	src: local("../fonts/Saira SemiCondensed Regular"), local("../fonts/SairaSemiCondensed-Regular"), url(../fonts/SairaSemiCondensed-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/SairaSemiCondensed-Regular.woff2) format("woff2"), url(../fonts/SairaSemiCondensed-Regular.woff) format("woff"), url(../fonts/SairaSemiCondensed-Regular.ttf) format("truetype"), url(../fonts/SairaSemiCondensed-Regular.svg#SairaSemiCondensed-Regular) format("svg");
 	font-display: swap;
-	font-family: Saira SemiCondensed;
+	font-family: 'Saira SemiCondensed';
 	font-style: normal;
 	font-weight: 400
 }
@@ -30,7 +30,7 @@
 	src: url(../fonts/SairaSemiCondensed-Bold.eot);
 	src: local("../fonts/Saira SemiCondensed Bold"), local("../fonts/SairaSemiCondensed-Bold"), url(../fonts/SairaSemiCondensed-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/SairaSemiCondensed-Bold.woff2) format("woff2"), url(../fonts/SairaSemiCondensed-Bold.woff) format("woff"), url(../fonts/SairaSemiCondensed-Bold.ttf) format("truetype"), url(../fonts/SairaSemiCondensed-Bold.svg#SairaSemiCondensed-Bold) format("svg");
 	font-display: swap;
-	font-family: Saira SemiCondensed;
+	font-family: 'Saira SemiCondensed';
 	font-style: normal;
 	font-weight: 400
 }
@@ -39,7 +39,7 @@
 	src: url(../fonts/Roboto-Medium.eot);
 	src: local("../fonts/Roboto Medium"), local("../fonts/Roboto-Medium"), url(../fonts/Roboto-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Medium.woff2) format("woff2"), url(../fonts/Roboto-Medium.woff) format("woff"), url(../fonts/Roboto-Medium.ttf) format("truetype"), url(../fonts/Roboto-Medium.svg#Roboto-Medium) format("svg");
 	font-display: swap;
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400
 }
@@ -48,7 +48,7 @@
 	src: url(../fonts/Roboto-Light.eot);
 	src: local("../fonts/Roboto Light"), local("../fonts/Roboto-Light"), url(../fonts/Roboto-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Light.woff2) format("woff2"), url(../fonts/Roboto-Light.woff) format("woff"), url(../fonts/Roboto-Light.ttf) format("truetype"), url(../fonts/Roboto-Light.svg#Roboto-Light) format("svg");
 	font-display: swap;
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400
 }
@@ -57,7 +57,7 @@
 	src: url(../fonts/Roboto-Regular.eot);
 	src: local("../fonts/Roboto"), local("../fonts/Roboto-Regular"), url(../fonts/Roboto-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Roboto-Regular.woff2) format("woff2"), url(../fonts/Roboto-Regular.woff) format("woff"), url(../fonts/Roboto-Regular.ttf) format("truetype"), url(../fonts/Roboto-Regular.svg#Roboto-Regular) format("svg");
 	font-display: swap;
-	font-family: Roboto;
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400
 }
@@ -87,15 +87,15 @@
 }
 
 .ff-primary {
-	font-family: Roboto
+	font-family: 'Roboto'
 }
 
 .ff-secondary {
-	font-family: Saira SemiCondensed, sans-serif
+	font-family: 'Saira SemiCondensed', sans-serif
 }
 
 .ff-success {
-	font-family: SVN-Cintra
+	font-family: 'SVN-Cintra'
 }
 
 .text-center {
@@ -170,6 +170,10 @@ html {
 	background: url(../images/pattern_days.jpg) repeat
 }
 
+.popup-close-button img {
+	width: 3.07vw;
+}
+
 .calendar-container table {
 	border-spacing: 0;
 	width: 100%;
@@ -183,7 +187,7 @@ html {
 
 .calendar-container .calendar-header-container .calendar-day-item {
 	padding: 10px 5px;
-	font-family: Saira SemiCondensed, sans-serif;
+	font-family: 'Saira SemiCondensed', sans-serif;
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 1;
@@ -422,26 +426,15 @@ html {
 	background: url(../images/popup/popup_bg.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	width: 80vw;
-	font-family: Roboto
-}
-
-@media (min-width:992px) {
-	.popup-container .popup-item .popup-content {
-		width: 52vw
-	}
-}
-
-@media (min-width:1400px) {
-	.popup-container .popup-item .popup-content {
-		width: 45vw
-	}
+	height: 76.35%;
+	width: 66.41vw;
+	font-family: 'Roboto'
 }
 
 .popup-container .popup-item .popup-close-button {
 	position: absolute;
-	top: -41px;
-	right: -41px;
+	top: -3.5vw;
+	right: -3.5vw;
 	cursor: pointer
 }
 
@@ -543,5 +536,194 @@ html {
 
 	.popup-container .popup-item.event-3 .popup-image-inner img {
 		width: 12rem;
+	}
+
+	.calendar-container {
+		padding-top: 40px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box {
+		height: 30px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-title h2 {
+		font-size: 12px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-gift span {
+		font-size: 12px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-gift img {
+		height: 30px;
+	}
+
+	.calendar-container .calendar-title img {
+		height: 2rem;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-title h2 img {
+		width: 10px;
+	}
+
+	.calendar-container .calendar-header-container .calendar-day-item {
+		font-size: 12px;
+	}
+
+	.popup-container .popup-item .popup-title h3 img {
+		height: 1.5rem;
+	}
+
+	.popup-container .popup-item .popup-date {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+	.calendar-container {
+		padding-top: 40px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box {
+		height: 30px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-title h2 {
+		font-size: 10px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-gift span {
+		font-size: 12px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-gift img {
+		height: 30px;
+	}
+
+	.calendar-container .calendar-title img {
+		height: 2rem
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-title h2 img {
+		width: 10px;
+	}
+
+	.calendar-container .calendar-header-container .calendar-day-item {
+		font-size: 12px;
+	}
+
+	.popup-container .popup-item .popup-title h3 img {
+		height: 1.5rem;
+	}
+
+	.popup-container .popup-item .popup-date {
+		font-size: 25px;
+	}
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {
+	.calendar-container {
+		padding-top: 40px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box {
+		height: 30px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-title h2 {
+		font-size: 10px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-gift span {
+		font-size: 12px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-gift img {
+		height: 30px;
+	}
+
+	.calendar-container .calendar-title img {
+		height: 2rem
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-title h2 img {
+		width: 10px;
+	}
+
+	.calendar-container .calendar-header-container .calendar-day-item {
+		font-size: 12px;
+	}
+
+	.popup-container .popup-item .popup-title h3 img {
+		height: 1.5rem;
+	}
+
+	.popup-container .popup-item .popup-date {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 823px) and (max-height: 411px) {
+	.calendar-container {
+		padding-top: 53px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box {
+		height: 30px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-title h2 {
+		font-size: 10px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-gift span {
+		font-size: 12px;
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-gift img {
+		height: 30px;
+	}
+
+	.calendar-container .calendar-title img {
+		height: 2rem
+	}
+
+	.calendar-container .calendar-body-container .calendar-body-box .calendar-body-event .event-title h2 img {
+		width: 10px;
+	}
+
+	.calendar-container .calendar-header-container .calendar-day-item {
+		font-size: 12px;
+	}
+
+	.popup-container .popup-item .popup-title h3 img {
+		height: 1.5rem;
+	}
+
+	.popup-container .popup-item .popup-date {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+	.popup-container .popup-item.event-3 .popup-image-inner img {
+		width: 10rem;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+	.popup-container .popup-item .popup-description p,
+	.popup-container .popup-item .popup-description p {
+		font-size: 12px;
+	}
+
+	.popup-container .popup-item .popup-date {
+		font-size: 15px;
+	}
+
+	.popup-container .popup-item .popup-date {
+		padding-top: 20px;
 	}
 }
