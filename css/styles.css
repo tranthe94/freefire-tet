@@ -281,19 +281,29 @@ button.close img{
   background-size: 100% 100%;
 }
 .container-popup > div{
-  display: flex;
+  /* display: flex; */
   height: 100%;
   width: 50%;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  position: relative;
 }
-.popup-img img{
+.popup-img > img{
   height: 73.42%;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
 }
 .popup-content{
   flex-wrap: wrap;
+  display: flex;
 }
-.popup-content h2,.popup-content h3,.popup-content p,.popup-content span{
+.popup-content-container{
+  padding: 0px 5%;
+}
+.popup-content h2,.popup-content h3, .popup-content h4,.popup-content h5,.popup-content h6,.popup-content p,.popup-content span{
   width: 100%;
   color: #47070b;
   text-transform: uppercase;
@@ -313,9 +323,16 @@ button.close img{
 .popup-content h3{
   font-size: 3.44vw;
 }
+.popup-content h4{
+  font-size: 2vw;
+}
+.popup-content h6{
+  font-size: 1.5vw;
+}
 .popup-content p{
   font-size: 1.79vw;
 }
+
 .popup-content p b{
   font-weight: 500;
   position: relative;
@@ -360,16 +377,30 @@ button.close img{
   align-items: flex-start;
 }
 #kc-20-trieu .popup-img{
-  height: 45.14%!important;
-  padding-top: 5%;
+  height: 37.14%!important;
+  margin-top: 5%;
 }
 #kc-20-trieu .popup-img img{
+  height: 100%;
+}
+.menuPop .container-popup > div{
+  width: 100%;
+}
+.menuPop .container-popup > div{
+  height: auto;
+  align-items: flex-start;
+}
+.menuPop .popup-img{
+  height: 0%!important;
+  padding-top: 5%;
+}
+.menuPop .popup-img img{
   height: 100%;
 }
 .bg-popup-blue{
   background-image: url(../images/bg-popup-blue.png);
 }
-.bg-popup-blue .popup-content h2, .bg-popup-blue .popup-content h3, .bg-popup-blue .popup-content p, .bg-popup-blue .popup-content span{
+.bg-popup-blue .popup-content h2, .bg-popup-blue .popup-content h3, .bg-popup-blue .popup-content h4, .bg-popup-blue .popup-content h5, .bg-popup-blue .popup-content h6, .bg-popup-blue .popup-content p, .bg-popup-blue .popup-content span{
   color: #8492d3;
 }
 .bg-popup-blue .popup-content p b::before,.bg-popup-blue .popup-content p b::after{
@@ -390,6 +421,7 @@ button.close img{
 }
 #hopmathuat .popup-img{
   flex-wrap: wrap;
+  display: flex;
 }
 #hopmathuat .popup-img h2,#hopmathuat .popup-img > img,#hopmathuat .popup-img p{
   width: 100%;
@@ -470,6 +502,10 @@ ul.list-kc,ul.list-kc li{
 #hopmathuat ul.list-kc li:nth-of-type(2n) span:last-child{
   background: #58090d;
 }
+
+.kim-cuong{
+  height:4vh;
+}
 @media (max-width: 540px),(width: 768px) and (height: 1024px),(height: 768px) and (width: 1024px),(width: 1024px) and (height: 1366px),(height: 1024px) and (width: 1366px){
   body{
     height: 56.25vw;
@@ -482,6 +518,10 @@ ul.list-kc,ul.list-kc li{
     left: 31%;
   }
   .popup-img img{
-    width: auto;
+    width: auto!important;
+    max-width: 100%!important;
+  }
+  .kim-cuong{
+    height: 1vh;
   }
 }
